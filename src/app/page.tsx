@@ -1,4 +1,13 @@
-
+/**
+ * 主页面组件
+ * Home Page Component
+ * 
+ * 包含以下主要部分：
+ * - 个人简介
+ * - 活动展示
+ * - 博客文章列表
+ * - 项目展示
+ */
 import { Container } from '@/components/layout/Container'
 import Newsletter from '@/components/home/Newsletter'
 import Feed from '@/components/home/Feed'
@@ -17,9 +26,13 @@ import { CustomIcon } from '@/components/shared/CustomIcon'
 import IconCloud from "@/components/ui/icon-cloud";
 import { TweetGrid } from "@/components/home/TweetGrid";
 
-
-
-
+/**
+ * 主页面的默认导出组件
+ * Default export for home page
+ * 
+ * 使用 Container 组件包装所有内容，确保布局一致性
+ * Uses Container component to wrap all content for consistent layout
+ */
 export default async function Home() {
   let blogList = (await getAllBlogs()).slice(0, 4)
   // console.log('blogList: ', blogList)
@@ -27,7 +40,7 @@ export default async function Home() {
   return (
     <>
       <Container className="mt-9">
-        {/* personal info */}
+        {/* 个人简介 */}
         <div className="mb-10 grid grid-cols-1 md:grid-cols-2">
           <div className='md:mt-20'>
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl opacity-80">
@@ -46,7 +59,7 @@ export default async function Home() {
           {/* <GithubContributions /> */}
           <GitHubSnake />
         </div>
-        {/* projects */}
+        {/* 项目展示 */}
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
           <h2 className="text-3xl font-semibold tracking-tight md:text-5xl opacity-80">
             {projectHeadLine}
@@ -86,7 +99,7 @@ export default async function Home() {
           </p>
         </div>
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          {/* left column */}
+          {/* 左侧博客列表 */}
           {/* blog */}
           <div className="flex flex-col gap-16">
             {blogList.map((blog: BlogType) => (
@@ -94,6 +107,7 @@ export default async function Home() {
             ))}
           </div>
 
+          {/* 右侧活动展示 */}
           {/* right column */}
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Career />

@@ -1,3 +1,13 @@
+/**
+ * 根布局组件
+ * Root Layout Component
+ * 
+ * 这个组件是整个应用的根布局，包含：
+ * - 网站元数据配置
+ * - RSS Feed 配置
+ * - 根字体设置
+ * - 主题配置
+ */
 import { type Metadata } from 'next'
 
 import { Providers } from '@/app/providers'
@@ -6,6 +16,10 @@ import { Analytics } from "@/components/analytics/analytics";
 import { name, headline, introduction } from '@/config/infoConfig'
 import '@/styles/tailwind.css'
 
+/**
+ * 网站元数据配置
+ * Website metadata configuration
+ */
 export const metadata: Metadata = {
   title: {
     template: `%s - ${name}`,
@@ -41,6 +55,13 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
 }
 
+/**
+ * 根布局的主要渲染函数
+ * Main rendering function for root layout
+ * 
+ * @param children - 子组件，将被包裹在布局中
+ * @returns 完整的页面布局
+ */
 export default function RootLayout({
   children,
 }: {
