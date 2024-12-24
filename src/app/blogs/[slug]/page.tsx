@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
-import { getBlogBySlug, getBlogPosts } from '@/lib/blogs'
+import { getBlogBySlug, getAllBlogs } from '@/lib/blogs'
 import { getMDXContent } from '@/lib/mdx'
 import { BlogLayout } from '@/components/layout/BlogLayout'
 
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  const posts = await getBlogPosts()
+  const posts = await getAllBlogs()
   return posts.map((post) => ({
     slug: post.slug,
   }))
