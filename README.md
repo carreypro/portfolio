@@ -72,3 +72,76 @@ pnpm dev
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+
+
+# Corey Chiu Portfolio
+
+A modern, responsive portfolio website built with Next.js 14, TailwindCSS, and TypeScript.
+
+## Features
+
+- Modern UI with clean design
+- Dark mode support
+- Fully responsive
+- Fast page loads with Next.js
+- Blog support with MDX
+- Twitter integration
+- Activity tracking
+- Code syntax highlighting
+
+## Development
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- pnpm (recommended) or npm
+
+### Local Development
+
+1. Install dependencies:
+```bash
+pnpm install
+```
+
+2. Start the development server:
+```bash
+pnpm dev
+```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Project Structure
+
+```
+src/
+├── app/              # Next.js app router pages
+├── components/       # React components
+├── config/          # Site configuration
+├── content/         # Blog posts and content
+├── lib/            # Utility functions
+└── styles/         # Global styles
+```
+
+### Git Branches
+
+- `main`: Production branch
+- `feature/bilingual-commits`: Development branch with bilingual commit messages
+
+## Recent Updates
+
+### 2024-12-24
+- Added bilingual (English/Chinese) comments to core components
+- Set up local development environment
+- Improved code documentation
+- Added Tweet Grid component with animations
+
+## Contributing
+
+1. Create a new branch for your feature
+2. Make changes and test locally using `pnpm dev`
+3. Commit with bilingual messages (English/Chinese)
+4. Create a pull request
+
+## License
+
+MIT License - See [LICENSE](LICENSE) for details
