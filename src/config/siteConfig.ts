@@ -1,7 +1,6 @@
 // site config
 export const utm_source = process.env.NEXT_PUBLIC_UTM_SOURCE
 
-
 // navigation config
 type NavItemType = {
   name: string
@@ -24,10 +23,6 @@ export const footerItems: Array<NavItemType> = [
   {
     name: 'Blogs',
     href: '/blogs'
-  },
-  {
-    name: 'Friends',
-    href: '/friends'
   },
   {
     name: 'Changelog',
