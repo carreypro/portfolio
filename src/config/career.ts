@@ -14,7 +14,7 @@ export type CareerItemType = {
     {
       company: 'A Major Internet Company',
       title: 'Product Manager',
-      logo: 'company',
+      logo: 'bank',
       start: '2023',
       end: '2024'
     },

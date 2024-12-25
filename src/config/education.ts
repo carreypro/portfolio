@@ -12,7 +12,7 @@ export type EducationItemType = {
   
   export const educationList: Array<EducationItemType> = [
     {
-      school: 'Simon Fraser University',
+      school: 'SFU',
       major: 'Digital Media Art',
       logo: 'college',
       start: '2018',

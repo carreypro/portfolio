@@ -1,6 +1,6 @@
-# carrey's Portfolio
+# Carrey's Portfolio
 
-This is a portfolio website created by [carrey](https://github.com/carreypro).
+This is a portfolio website created by [Carrey](https://github.com/carreypro).
 
 
 ## Features
@@ -82,7 +82,7 @@ pnpm dev
 Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
 
 
-# carrey's Portfolio
+# Carrey's Portfolio
 
 A modern, responsive portfolio website built with Next.js 14, TailwindCSS, and TypeScript.
 
