@@ -93,7 +93,7 @@ export type ProjectItemType = {
     {
       name: 'Devtoolset',
       description: 'Open-source & database-free developer tools navigator / 开源无数据库配置的开发者工具导航站',
-      link: { href: 'github.com/iAmCorey/devtoolset', label: 'Devtoolset' },
+      link: { href: 'https://github.com/carreypro/devtoolset', label: 'Devtoolset' },
       gitStars: 203,
       gitForks: 67
     },
@@ -101,7 +101,7 @@ export type ProjectItemType = {
       name: 'Corey Chiu Portfolio Template',
       description:
         'portfolio template by corey chiu',
-      link: { href: 'github.com/iAmCorey/coreychiu-portfolio-template', label: 'Corey Chiu Portfolio Template' },
+      link: { href: 'https://github.com/carreypro/coreychiu-portfolio-template', label: 'Corey Chiu Portfolio Template' },
       gitStars: 229,
       gitForks: 30
     },
@@ -109,7 +109,7 @@ export type ProjectItemType = {
       name: 'Chrome Extension Plasmo Template',
       description:
         'A chrome extension template using plasmo, tailwind css, shadcn/ui',
-      link: { href: 'github.com/iAmCorey/chrome-extension-plasmo-template', label: 'Chrome Extension Plasmo Template' },
+      link: { href: 'https://github.com/carreypro/chrome-extension-plasmo-template', label: 'Chrome Extension Plasmo Template' },
       gitStars: 54,
       gitForks: 10
     },
@@ -117,7 +117,7 @@ export type ProjectItemType = {
       name: 'Awesome Indie Hacker Tools',
       description:
         '独立开发/出海开发相关技术栈及工具收录 / Find the best tools for indie hackers here',
-      link: { href: 'github.com/iAmCorey/awesome-indie-hacker-tools', label: 'Awesome Indie Hacker Tools' },
+      link: { href: 'https://github.com/carreypro/awesome-indie-hacker-tools', label: 'Awesome Indie Hacker Tools' },
       gitStars: 815,
       gitForks: 69
     },
@@ -125,7 +125,7 @@ export type ProjectItemType = {
       name: 'Awesome AI Directory',
       description:
         'AI资源工具导航站收录 / Find all the best AI directories',
-      link: { href: 'github.com/iAmCorey/awesome-ai-directory', label: 'Awesome AI Directory' },
+      link: { href: 'https://github.com/carreypro/awesome-ai-directory', label: 'Awesome AI Directory' },
       gitStars: 40,
       gitForks: 7
     },
@@ -133,7 +133,7 @@ export type ProjectItemType = {
       name: 'Producthunt Daily Bot',
       description:
         'A bot getting product hunt daily top products',
-      link: { href: 'github.com/iAmCorey/producthunt-daily-bot', label: 'Producthunt Daily Bot' },
+      link: { href: 'https://github.com/carreypro/producthunt-daily-bot', label: 'Producthunt Daily Bot' },
       gitStars: 3,
       gitForks: 3
     },
@@ -141,7 +141,7 @@ export type ProjectItemType = {
       name: 'Cantonese Echoes',
       description:
         'Cantonese Echoes / 粵語殘片',
-      link: { href: 'github.com/iAmCorey/Cantonese-Echoes', label: 'Cantonese Echoes' },
+      link: { href: 'https://github.com/carreypro/Cantonese-Echoes', label: 'Cantonese Echoes' },
       gitStars: 1
     },
   ]
