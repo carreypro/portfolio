@@ -7,18 +7,19 @@ export * from './activity'
 
 
 // personal info
-export const name = 'Corey Chiu'
-export const headline = 'Software engineer, Full-Stack web developer, and indie hacker.'
-export const introduction = 'I\'m Corey, a software engineer based in Shenzhen, China. I like coding, and building interesting things'
-export const email = 'iamcoreychiu@gmail.com'
-export const githubUsername = 'iamcorey'
+export const name = 'carrey'
+export const headline = 'Product Manager, Independent AI Developer.'
+export const introduction = 'I\'m Carrey, a former product manager at a leading internet company and an entrepreneur. Now, I’m using AI to shape my second life.
+'
+export const email = 'nafiuriak@163.com'
+export const githubUsername = 'carreypro'
 
 // about page
-export const aboutMeHeadline = "I'm Corey Chiu, a software engineer based in Shenzhen, China."
+export const aboutMeHeadline = "I'm carrey, a Product Manager based in Hangzhou, China."
 export const aboutParagraphs = [
-  "I love coding. I learned programming when I in college. I wrote my first program in Java when I was 18.",
-  "I have a lot of hobbies, such as travelling, photography, watching movies, music and so on.",
-  "I'm working as a software develop engineer in Shenzhen, China now. And I'm building a lot of side projects in my spare time."
+  "I used to be an esports player and event planner before transitioning to become a product manager.",
+  "Now, I’m an independent AI developer, creating products I love.",
+  "I’m also a film researcher and a cinephile with a passion for analog photography."
 ]
 
 // blog
@@ -38,33 +39,28 @@ export const socialLinks: Array<SocialLinkType> = [
   {
     name: 'X',
     icon: 'x',
-    href: 'https://x.com/realcoreychiu'
+    href: 'https://x.com/zhizhikai'
   },
   {
     name: 'Bsky',
     icon: 'bsky',
-    href: 'https://bsky.app/profile/coreychiu.com'
+    href: 'https://bsky.app/profile/carrey01.bsky.social'
   },
   {
     name: 'Jike',
     icon: 'pill',
-    href: 'https://okjk.co/P7c1zU'
+    href: 'https://okjk.co/zIdfP5'
   },
   {
     name: 'Github',
     icon: 'github',
-    href: 'https://github.com/iamcorey'
+    href: 'https://github.com/carreypro'
   },
   {
     name: 'Wechat',
     icon: 'wechat',
     href: 'https://mp.weixin.qq.com/s/DxnRgqNfgzXIhqj6w_x0dQ'
   },
-  {
-    name: 'Ko-fi',
-    icon: 'coffee',
-    href: 'https://ko-fi.com/coreychiu'
-  }
 ]
 
 // https://simpleicons.org/

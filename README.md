@@ -1,6 +1,6 @@
-# Corey Chiu Portfolio Template
+# Carrey's Portfolio
 
-This is a portfolio template template created by [Corey Chiu](https://coreychiu.com).
+This is a portfolio website created by [Carrey](https://github.com/carreypro).
 
 
 ## Features
@@ -15,6 +15,14 @@ This is a portfolio template template created by [Corey Chiu](https://coreychiu.
 - MDX and Markdown support
 - RSS Feed
 - Web Analytics(Google Analytics, OpenPanel Analytics, Plausible Analytics, etc.)
+
+
+## Recent Updates
+### 2024-12-25
+- 个人信息更新 Personal Information Updates
+  - 更新个人简介和职业信息 Updated personal profile and career information
+  - 更新社交媒体链接 Updated social media links
+  - 简化网站导航菜单 Simplified website navigation menu
 
 
 ## Tech Stack
@@ -74,7 +82,7 @@ pnpm dev
 Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
 
 
-# Corey Chiu Portfolio
+# Carrey's Portfolio
 
 A modern, responsive portfolio website built with Next.js 14, TailwindCSS, and TypeScript.
 
@@ -126,14 +134,6 @@ src/
 
 - `main`: Production branch
 - `feature/bilingual-commits`: Development branch with bilingual commit messages
-
-## Recent Updates
-
-### 2024-12-24
-- Added bilingual (English/Chinese) comments to core components
-- Set up local development environment
-- Improved code documentation
-- Added Tweet Grid component with animations
 
 ## Contributing
 
