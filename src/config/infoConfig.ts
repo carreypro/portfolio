@@ -6,11 +6,19 @@ export * from './career'
 export * from './activity'
 
 
+// name config
+export const nameConfig = {
+  raw: 'carrey',
+  withPrefix: {
+    im: "I'm carrey",
+    by: "by carrey",
+  }
+}
+
 // personal info
-export const name = 'Carrey'
 export const headline = 'Product Manager, Independent AI Developer.'
 export const introduction = 'I\'m Carrey, a former product manager at a leading internet company and an entrepreneur. Now, I\'m using AI to shape my second life.'
-export const email = 'nafiuriak@163.com'
+export const email = 'nafiuriak@gmail.com'
 export const githubUsername = 'carreypro'
 
 // about page
