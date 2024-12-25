@@ -9,8 +9,7 @@ export * from './activity'
 // personal info
 export const name = 'carrey'
 export const headline = 'Product Manager, Independent AI Developer.'
-export const introduction = 'I\'m Carrey, a former product manager at a leading internet company and an entrepreneur. Now, I’m using AI to shape my second life.
-'
+export const introduction = 'I\'m Carrey, a former product manager at a leading internet company and an entrepreneur. Now, I\'m using AI to shape my second life.'
 export const email = 'nafiuriak@163.com'
 export const githubUsername = 'carreypro'
 
