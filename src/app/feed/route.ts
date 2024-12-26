@@ -1,33 +1,30 @@
 import assert from 'assert'
 import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
-import { name, email } from '@/config/infoConfig'
+import { nameConfig, email } from '@/config/infoConfig'
 import { getBlogBySlug } from '@/lib/blogs'
 import { promises as fs } from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
 export async function GET(req: Request) {
-  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-
-  if (!siteUrl) {
-    throw Error('Missing NEXT_PUBLIC_SITE_URL environment variable')
-  }
+  let siteUrl = 'https://carreypro.com'
 
   let author = {
-    name: name,
+    name: nameConfig.raw,
     email: email,
+    link: siteUrl,
   }
 
   let feed = new Feed({
-    title: author.name,
-    description: name + '\'s blog',
+    title: `${nameConfig.raw}'s Blog`,
+    description: `${nameConfig.raw}'s blog`,
     author,
     id: siteUrl,
     link: siteUrl,
     image: `${siteUrl}/favicon.ico`,
     favicon: `${siteUrl}/favicon.ico`,
-    copyright: `All rights reserved ${name} ${new Date().getFullYear()}`,
+    copyright: `All rights reserved ${nameConfig.raw} ${new Date().getFullYear()}`,
     feedLinks: {
       rss2: `${siteUrl}/feed`,
     },

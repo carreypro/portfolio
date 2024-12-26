@@ -12,7 +12,7 @@ import avatarImage from '@/images/avatar.jpg'
 import { navItems } from '@/config/siteConfig'
 import { ThemeToggle } from '@/components/shared/ThemeToggle'
 import { GithubRepo } from '@/components/shared/GithubRepo'
-import { name } from '@/config/infoConfig'
+import { nameConfig } from '@/config/infoConfig'
 import { ChevronDownIcon, XIcon } from 'lucide-react'
 
 import TypingAnimation from "@/components/ui/typing-animation";
@@ -72,7 +72,7 @@ function MobileNavigation(
                 <XIcon className="h-6 w-6 text-muted-foreground" />
               </Popover.Button>
               <h2 className="text-sm font-medium text-muted-foreground">
-                {name}
+                {nameConfig.raw}
               </h2>
             </div>
             <nav className="mt-6">
@@ -167,7 +167,7 @@ function AvatarContainer({
           aria-label="Home"
           className='pointer-events-auto'
         >
-          <div className="text-md font-semibold capitalize">{name}</div>
+          <div className="text-md font-semibold capitalize">{nameConfig.raw}</div>
         </Link>
       )}
     </div>
@@ -370,7 +370,7 @@ export function Header() {
                       Hi,{' '}
                       <TypingAnimation
                         className="text-3xl md:text-6xl font-bold tracking-tight"
-                        text={`I'm ${name} `}
+                        text={nameConfig.withPrefix.im}
                         duration={150}
                       />
                       👋

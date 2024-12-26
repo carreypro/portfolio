@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ContainerInner, ContainerOuter } from '@/components/layout/Container'
 import { footerItems } from '@/config/siteConfig'
 import { ThemeToggle } from '@/components/shared/ThemeToggle'
-import { name } from '@/config/infoConfig'
+import { nameConfig } from '@/config/infoConfig'
 import SocialLinks from '@/components/home/SocialLinks'
 import VisitData from '@/components/layout/VisitData'
 
@@ -40,7 +40,7 @@ export function Footer() {
               <div className='flex flex-col justify-center items-start'>
                 <div className='flex flex-row justify-end items-center gap-2'>
                   <p className="text-sm text-muted-foreground">
-                    &copy; {new Date().getFullYear()} {name}. All rights reserved.
+                    &copy; {new Date().getFullYear()} {nameConfig.raw}. All rights reserved.
                   </p>
                   <ThemeToggle />
                 </div>
