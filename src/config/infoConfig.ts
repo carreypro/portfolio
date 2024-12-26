@@ -72,26 +72,37 @@ export const socialLinks: Array<SocialLinkType> = [
 
 // https://simpleicons.org/
 export const techIcons = [
-  "typescript",
-  "javascript",
-  "supabase",
+  // AI 工具
+  "openai",
+  "stability",
+  "huggingface",
+  "codeium",
+
+  // 云服务/部署
   "cloudflare",
-  "java",
-  "oracle",
-  "mysql",
-  "react",
-  "nodedotjs",
-  "nextdotjs",
-  "prisma",
-  "postgresql",
-  "nginx",
   "vercel",
-  "docker",
-  "git",
+  
+  // 开发工具
   "github",
-  "visualstudiocode",
-  "androidstudio",
+  
+  // 平台
   "ios",
   "apple",
-  "wechat"
+  "wechat",
+  
+  // 设计工具
+  "figma",
+  "adobexd",
+  "adobephotoshop",
+  "sketch",
+  
+  // 产品管理工具
+  "notion",
+  
+  // 原型工具
+  "axure",
+  
+  // 分析工具
+  "googleanalytics",
+  "mixpanel"
 ];
