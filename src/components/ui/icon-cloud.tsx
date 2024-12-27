@@ -38,15 +38,20 @@ export const cloudProps: Omit<ICloud, "children"> = {
 };
 
 export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
-  const bgHex = theme === "light" ? "#f3f2ef" : "#080510";
-  const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff";
-  const minContrastRatio = theme === "dark" ? 2 : 1.2;
+  const bgHex = theme === "light" ? "#ffffff" : "#080510";
+  const fallbackHex = theme === "light" ? "#000000" : "#ffffff";
+
+  // 使用图标自带的颜色
+  const iconColor = icon.hex || fallbackHex;
 
   return renderSimpleIcon({
-    icon,
+    icon: {
+      ...icon,
+      hex: iconColor,
+    },
     bgHex,
     fallbackHex,
-    minContrastRatio,
+    minContrastRatio: 1,
     size: 42,
     aProps: {
       href: undefined,
