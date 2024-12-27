@@ -70,7 +70,7 @@ function MobileNavigation(
               <Popover.Button aria-label="Close menu" className="-m-1 p-1">
                 <XIcon className="h-6 w-6 text-muted-foreground" />
               </Popover.Button>
-              <h2 className="text-sm font-medium text-muted-foreground">
+              <h2 className="text-sm font-medium text-muted-foreground lowercase">
                 {nameConfig.raw}
               </h2>
             </div>
@@ -166,7 +166,7 @@ function AvatarContainer({
           aria-label="Home"
           className='pointer-events-auto'
         >
-          <div className="text-md font-semibold capitalize">{nameConfig.raw}</div>
+          <div className="text-md font-semibold lowercase">{nameConfig.raw}</div>
         </Link>
       )}
     </div>
