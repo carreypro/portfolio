@@ -3,28 +3,40 @@
 import { ArrowRightIcon, HashIcon } from 'lucide-react'
 import Image from 'next/image'
 import { ArrowUpRight } from '@phosphor-icons/react'
-import { ProjectItemType } from '@/config/infoConfig'
+import { ProjectItemType } from '@/config/projects'
 import { utm_source } from '@/config/siteConfig'
 import Link from 'next/link'
-
+import { Logo } from '../shared/Logo'
 
 export function ProjectCard({ project, titleAs }: { project: ProjectItemType, titleAs?: keyof JSX.IntrinsicElements }) {
-  const utmLink = `https://${project.link.href}?utm_source=${utm_source}`
+  const utmLink = project.link.href.startsWith('http') ? project.link.href : `https://${project.link.href}`
   let Component = titleAs ?? 'h2'
   return (
     <li className='group relative flex flex-col items-start h-full'>
       <div className="relative flex flex-col justify-between h-full w-full p-4 rounded-2xl border border-muted-foreground/20 shadow-sm transition-all group-hover:scale-[1.03] group-hover:shadow-md group-hover:bg-muted/5">
         <div className=''>
           <div className='flex flex-col sm:flex-row justify-center sm:justify-start items-start sm:items-center gap-4'>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full">
-              <Image
-                src={project.logo ?? `https://www.google.com/s2/favicons?domain=${project.link.href}&sz=32`}
-                alt={`${project.name} favicon`}
-                width={36}
-                height={36}
-                sizes='36px'
-                className="rounded-full"
-              />
+            <div className="relative z-10 flex h-12 w-12 items-center justify-center">
+              {project.logo === 'maoxiu' ? (
+                <Image
+                  src="https://www.lmaoyx.com/favicon.ico"
+                  alt="猫修 logo"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8"
+                />
+              ) : project.logo ? (
+                <Logo type={project.logo as 'github'} className="h-8 w-8" />
+              ) : (
+                <Image
+                  src={`https://www.google.com/s2/favicons?domain=${project.link.href}&sz=32`}
+                  alt={`${project.name} favicon`}
+                  width={36}
+                  height={36}
+                  sizes='36px'
+                  className="rounded-full"
+                />
+              )}
             </div>
             <Component className="text-base font-semibold">
               {project.name}
