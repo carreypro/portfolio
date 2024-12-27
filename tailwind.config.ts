@@ -23,8 +23,8 @@ export default {
   		'8xl': ['6rem', { lineHeight: '1' }],
   		'9xl': ['8rem', { lineHeight: '1' }]
   	},
-  	typography: 'typographyStyles',
   	extend: {
+  		typography: typographyStyles,
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
