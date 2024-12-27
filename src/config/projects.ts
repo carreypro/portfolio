@@ -44,11 +44,11 @@ export const projects: Array<ProjectItemType> = [
 export const githubProjects: Array<ProjectItemType> = [
   {
     name: '个人网站',
-    description: '基于 Next.js 14 开发的个人网站',
-    link: { href: 'github.com/carreypro/carreyproone', label: '个人网站' },
+    description: '首个项目的临摹',
+    link: { href: 'github.com/carreypro/portfolio', label: '个人网站' },
     logo: 'github',
-    gitStars: 0,
-    gitForks: 0,
+    gitStars: 1,
+    gitForks: 1,
     techStack: ['Next.js', 'TailwindCSS', 'TypeScript'],
   },
 ]

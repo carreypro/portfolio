@@ -23,7 +23,7 @@ function ChangelogSection({
         >
           {date}
         </h2>
-        <div className="md:col-span-3">{children}</div>
+        <div className="md:col-span-3 space-y-6">{children}</div>
       </div>
     </section>
   )
@@ -33,17 +33,22 @@ function ChangelogSection({
 function ChangelogItem({
   title,
   description,
+  divider,
 }: {
   title: string
   description: string
+  divider?: boolean
 }) {
   return (
-    <Card as="li">
-      <Card.Title as="h3">
-        {title}
-      </Card.Title>
-      <Card.Description>{description}</Card.Description>
-    </Card>
+    <>
+      <Card as="li">
+        <Card.Title as="h3">
+          {title}
+        </Card.Title>
+        <Card.Description>{description}</Card.Description>
+      </Card>
+      {divider && <div className="border-t border-zinc-100 dark:border-zinc-700/40" />}
+    </>
   )
 }
 
@@ -52,15 +57,15 @@ export default function ChangelogBlock() {
     <>
       {changelogList.map((item: ChangelogItemType, index) => (
         <ChangelogSection date={item.date} key={index}>
-          {item.content.map((content: { title: string, description: string }, index2) => (
+          {item.content.map((content, index2) => (
             <ChangelogItem
+              key={index2}
               title={content.title}
               description={content.description}
-              key={index2}
+              divider={content.divider}
             />
           ))}
         </ChangelogSection>
       ))}
     </>)
-
 }
