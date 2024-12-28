@@ -66,7 +66,7 @@ export const socialLinks: Array<SocialLinkType> = [
   {
     name: 'Wechat',
     icon: 'wechat',
-    href: 'https://mp.weixin.qq.com/s/DxnRgqNfgzXIhqj6w_x0dQ'
+    href: '#'
   },
 ]
 
