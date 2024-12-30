@@ -33,16 +33,14 @@ export const cloudProps: Omit<ICloud, "children"> = {
     outlineColour: "#0000",
     maxSpeed: 0.04,
     minSpeed: 0.02,
-    // dragControl: false,
   },
 };
 
 export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
   const bgHex = theme === "light" ? "#ffffff" : "#080510";
-  const fallbackHex = theme === "light" ? "#000000" : "#ffffff";
-
-  // 使用图标自带的颜色
-  const iconColor = icon.hex || fallbackHex;
+  const fallbackHex = theme === "light" ? "#111111" : "#ffffff";
+  
+  const iconColor = theme === "light" ? "#000000" : "#ffffff";
 
   return renderSimpleIcon({
     icon: {
@@ -51,7 +49,7 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
     },
     bgHex,
     fallbackHex,
-    minContrastRatio: 1,
+    minContrastRatio: 4,
     size: 42,
     aProps: {
       href: undefined,
@@ -70,7 +68,7 @@ type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>;
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const [data, setData] = useState<IconData | null>(null);
-  const { theme } = useTheme();
+  const { theme, systemTheme } = useTheme();
 
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
@@ -78,11 +76,12 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
 
   const renderedIcons = useMemo(() => {
     if (!data) return null;
-
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light"),
+      renderCustomIcon(icon, currentTheme || "light"),
     );
-  }, [data, theme]);
+  }, [data, theme, systemTheme]);
 
   return (
     // @ts-ignore
