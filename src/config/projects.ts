@@ -43,9 +43,9 @@ export const projects: Array<ProjectItemType> = [
 // github projects
 export const githubProjects: Array<ProjectItemType> = [
   {
-    name: '个人网站',
-    description: '首个项目的临摹',
-    link: { href: 'github.com/carreypro/portfolio', label: '个人网站' },
+    name: '待更新',
+    description: '更新中',
+    link: { href: 'https://github.com/carreypro', label: '个人网站' },
     logo: 'github',
     gitStars: 1,
     gitForks: 1,
