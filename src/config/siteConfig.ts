@@ -14,8 +14,8 @@ export const navItems = [
     href: '/about',
   },
   {
-    name: 'Works',
-    href: '/works',
+    name: 'Projects',
+    href: '/projects',
   },
   {
     name: 'Blogs',
@@ -34,8 +34,8 @@ export const footerItems = [
     href: '/about',
   },
   {
-    name: 'Works',
-    href: '/works',
+    name: 'Projects',
+    href: '/projects',
   },
   {
     name: 'Blogs',

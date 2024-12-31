@@ -16,13 +16,15 @@ export type ProjectItemType = {
     gitForks?: number
   }
   
-// projects 
-export const projects: Array<ProjectItemType> = [
+// featured projects 
+export const featuredProjects: Array<ProjectItemType> = [
   {
     name: '永劫无间系列',
     description: '24 Entertainment工作室开发的多人动作竞技游戏',
     link: { href: 'https://www.yjwujian.cn/index.html', label: '永劫无间' },
     tags: ['官网', '游戏'],
+    category: ['Game'],
+    techStack: ['Next.js', 'TailwindCSS', 'TypeScript'],
   },
   {
     name: '猫修APP',
@@ -30,6 +32,8 @@ export const projects: Array<ProjectItemType> = [
     link: { href: 'https://www.lmaoyx.com/app', label: '猫修APP' },
     tags: ['APP', '游戏社区'],
     logo: 'maoxiu',
+    category: ['App'],
+    techStack: ['React Native', 'TypeScript', 'TailwindCSS'],
   },
   {
     name: '猫修平台',
@@ -37,6 +41,8 @@ export const projects: Array<ProjectItemType> = [
     link: { href: 'https://www.lmaoyx.com', label: '猫修平台' },
     tags: ['汉化', '修改器', '游戏'],
     logo: 'maoxiu',
+    category: ['Web'],
+    techStack: ['React', 'Node.js', 'MongoDB'],
   }
 ]
 
@@ -49,6 +55,10 @@ export const githubProjects: Array<ProjectItemType> = [
     logo: 'github',
     gitStars: 1,
     gitForks: 1,
+    category: ['Tool'],
     techStack: ['TypeScript', 'React', 'TailwindCSS'],
   },
 ]
+
+// all projects combined
+export const allProjects = [...featuredProjects, ...githubProjects]
