@@ -17,16 +17,16 @@ export const nameConfig = {
 
 // personal info
 export const headline = 'Product Manager, Independent AI Developer.'
-export const introduction = 'I\'m Carrey, a former product manager at a leading internet company and an entrepreneur. Now, I\'m using AI to shape my second life.'
+export const introduction = "I'm carrey, a former product manager at a leading internet company and an entrepreneur. Now, I'm using AI to shape my second life."
 export const email = 'nafiuriak@gmail.com'
 export const githubUsername = 'carreypro'
 
 // about page
-export const aboutMeHeadline = "I'm Carrey, a Product Manager based in Hangzhou, China."
+export const aboutMeHeadline = "I'm carrey, a Product Manager based in Hangzhou, China."
 export const aboutParagraphs = [
   "I used to be an esports player and event planner before transitioning to become a product manager.",
-  "Now, I’m an independent AI developer, creating products I love.",
-  "I’m also a film researcher and a cinephile with a passion for analog photography."
+  "Now, I'm an independent AI developer, creating products I love.",
+  "I'm also a film researcher and a cinephile with a passion for analog photography."
 ]
 
 // blog

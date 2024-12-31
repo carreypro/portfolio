@@ -15,7 +15,7 @@ export const navItems = [
   },
   {
     name: 'Projects',
-    href: '/projects',
+    href: '/works',
   },
   {
     name: 'Blogs',
@@ -35,7 +35,7 @@ export const footerItems = [
   },
   {
     name: 'Projects',
-    href: '/projects',
+    href: '/works',
   },
   {
     name: 'Blogs',

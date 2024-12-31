@@ -19,7 +19,8 @@ import { BlogCard } from '@/components/home/BlogCard'
 import { getAllBlogs, type BlogType } from '@/lib/blogs'
 import { ProjectCard } from '@/components/project/ProjectCard'
 import { GithubProjectCard } from '@/components/project/GithubProjectCard'
-import { projectHeadLine, projectIntro, projects, githubProjects, blogHeadLine, blogIntro, techIcons, activityHeadLine, activityIntro } from '@/config/infoConfig'
+import { projectHeadLine, projectIntro, blogHeadLine, blogIntro, techIcons, activityHeadLine, activityIntro } from '@/config/infoConfig'
+import { featuredProjects, githubProjects } from '@/config/projects'
 import GithubContributions from '@/components/home/GithubCalendar'
 import GitHubSnake from '@/components/home/GitHubSnake'
 import { CustomIcon } from '@/components/shared/CustomIcon'
@@ -71,7 +72,7 @@ export default async function Home() {
             role="list"
             className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
           >
-            {projects.map((project) => (
+            {featuredProjects.map((project) => (
               <ProjectCard key={project.name} project={project} titleAs='h3'/>
             ))}
           </ul>
