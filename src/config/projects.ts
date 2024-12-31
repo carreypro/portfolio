@@ -43,12 +43,12 @@ export const projects: Array<ProjectItemType> = [
 // github projects
 export const githubProjects: Array<ProjectItemType> = [
   {
-    name: '待更新',
-    description: '更新中',
-    link: { href: 'https://github.com/carreypro', label: '个人网站' },
+    name: '专注番茄钟',
+    description: '一个还挺好看的番茄钟',
+    link: { href: 'https://github.com/carreypro/zhuanzhufanqie', label: '专注番茄钟' },
     logo: 'github',
     gitStars: 1,
     gitForks: 1,
-    techStack: ['Next.js', 'TailwindCSS', 'TypeScript'],
+    techStack: ['TypeScript', 'React', 'TailwindCSS'],
   },
 ]
